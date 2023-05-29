@@ -40,7 +40,7 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `https://multi-eco.onrender.com/activation/${activationToken}`;
+    const activationUrl = `https://www.test.aliitltd.org/activation/${activationToken}`;
 
     try {
       await sendMail({
